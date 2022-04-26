@@ -36,17 +36,15 @@
 
 // const styles = StyleSheet.create({})
 
-import { Text, View } from 'react-native'
+import { StyleSheet, Text, View,SafeAreaView } from 'react-native'
 import React from 'react'
-import styles from './src/styles'
-
+import 'react-native-gesture-handler';
 const App = () => {
-    return (
-        <View style={styles.container}>
-            <Text>App</Text>
-        </View>
-    )
+  return (
+    <SafeAreaView style={{backgroundColor:"red"}}> 
+      <Text>App</Text>
+    </SafeAreaView>
+  )
 }
 
 export default App
-
